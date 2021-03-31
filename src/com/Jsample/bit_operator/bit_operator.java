@@ -1,4 +1,4 @@
-package com.Jsample;
+package com.Jsample.bit_operator;
 
 public class bit_operator {
     public static void main(String[] args){
