@@ -1,4 +1,4 @@
-package com.homework;
+package com.lesson2;
 
 /**
  * Java 中 package的概念和文件夹的概念类似

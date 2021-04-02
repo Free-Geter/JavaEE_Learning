@@ -1,4 +1,4 @@
-package com.Jsample;
+package com.lesson1;
 
 /**
  * @author cl

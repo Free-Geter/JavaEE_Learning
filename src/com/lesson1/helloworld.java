@@ -1,7 +1,5 @@
-package com.Jsample;
+package com.lesson1;
 // Java的包机制，相当于创建了一个新的文件夹，每个'文件夹'拥有一个独立的命名空间
-
-import java.sql.PreparedStatement;
 
 /**
  * @author CL

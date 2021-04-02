@@ -1,4 +1,4 @@
-package com.Jsample.array;
+package com.lesson1.array;
 
 public class Demo_0 {
     public static void main(String[] args) {

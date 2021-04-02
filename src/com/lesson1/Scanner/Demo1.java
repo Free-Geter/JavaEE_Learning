@@ -1,4 +1,4 @@
-package com.Jsample.Scanner;
+package com.lesson1.Scanner;
 
 import java.util.Scanner;
 

@@ -1,6 +1,12 @@
-package com.homework;
+package com.lesson2;
 
 public class javaBean_sample {
+
+    javaBean_sample(String name,int sex,int age){
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
+    }
     private String name;
     private int sex;
     private int age;
