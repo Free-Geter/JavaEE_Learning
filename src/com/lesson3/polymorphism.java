@@ -5,7 +5,7 @@ public class polymorphism extends Person{
     private int test;
 
     @Override
-    void dispinfo() {
+    protected void dispinfo() {
         System.out.println("this is an override of dispinfo");
     }
 

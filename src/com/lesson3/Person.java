@@ -5,7 +5,7 @@ public class Person {
     int age;
     int sex;
 
-    void dispinfo(){
+    protected void dispinfo(){
         System.out.println(name);
         System.out.println(age);
         System.out.println(sex);
