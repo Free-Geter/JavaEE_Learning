@@ -20,7 +20,7 @@ public class Person {
      * 默认构造函数的修饰符： 与class的修饰符保持一致
      */
     Person(){
-//        this();       不允许这么些：1.不允许自己调用自己。2.和Person(String,int)构成了循环调用
+//        this();       不允许这么写：1.不允许自己调用自己。2.和Person(String,int)构成了循环调用
     }
 
     Person(String name, int age) {
