@@ -65,6 +65,20 @@ class Solution2 {
     }
 }
 
+class Solution3 {
+    static public String defangIPaddr(String address) {
+        String ip = address.split(" = ")[1];
+//        System.out.println(ip);
+        ip = ip.replace(".","[.]");
+//        System.out.println(ip);
+        return ip;
+    }
+
+    public static void main(String[] args) {
+        defangIPaddr("address = \"1.1.1.1\"");
+    }
+}
+
 class Solution {
     public String replaceSpace(String s) {
         StringBuilder res = new StringBuilder();

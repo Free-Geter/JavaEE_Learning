@@ -122,3 +122,65 @@ class Solution041704 {
         return cur;
     }
 }
+
+/**
+ * 这一题要注意分析题意，这里只要求min、top获取元素，而不需要出栈
+ *
+ * 重要步骤，采取"非严格排序"的辅助存储单元
+ */
+class MinStack {
+    private LinkedList<Integer> stack;
+    private LinkedList<Integer> min_stack;
+    /** initialize your data structure here. */
+    public MinStack() {
+        stack = new LinkedList<>();
+        min_stack = new LinkedList<>();
+    }
+
+    public void push(int x) {
+        if (stack.isEmpty() || (x < min_stack.getLast())){
+            stack.addLast(x);
+            min_stack.addLast(x);
+        } else {
+            stack.addLast(x);
+        }
+    }
+
+    public void pop() {
+        if (stack.getLast().equals(min_stack.getLast())){
+            min_stack.removeLast();
+            stack.removeLast();
+        }
+    }
+
+    public int top() {
+        return stack.getLast();
+    }
+
+    public int min() {
+        if (min_stack.isEmpty())
+            throw new EmptyStackException();
+        else
+            return min_stack.getLast();
+    }
+
+    public static void main(String[] args) {
+        MinStack minStack = new MinStack();
+        minStack.push(0);
+        minStack.push(1);
+        minStack.push(0);
+        System.out.println(minStack.min());
+        minStack.pop();
+        System.out.println(minStack.top());
+        System.out.println(minStack.min());
+    }
+}
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(x);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.min();
+ */
